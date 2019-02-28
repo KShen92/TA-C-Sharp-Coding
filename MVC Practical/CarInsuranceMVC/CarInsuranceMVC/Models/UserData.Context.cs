@@ -13,10 +13,10 @@ namespace CarInsuranceMVC.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CarInsuranceMVCEntities : DbContext
+    public partial class CarInsuranceMVCEntities1 : DbContext
     {
-        public CarInsuranceMVCEntities()
-            : base("name=CarInsuranceMVCEntities")
+        public CarInsuranceMVCEntities1()
+            : base("name=CarInsuranceMVCEntities1")
         {
         }
     
@@ -25,6 +25,6 @@ namespace CarInsuranceMVC.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<UserQuote> UserQuotes { get; set; }
+        public virtual DbSet<UserData> UserDatas { get; set; }
     }
 }

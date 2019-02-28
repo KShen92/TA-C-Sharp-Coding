@@ -12,7 +12,7 @@ namespace CarInsuranceMVC.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class UserQuote
+    public partial class UserData
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

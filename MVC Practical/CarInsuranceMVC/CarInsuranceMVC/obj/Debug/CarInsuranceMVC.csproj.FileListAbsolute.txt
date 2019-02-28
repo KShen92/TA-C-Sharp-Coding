@@ -77,8 +77,8 @@ D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\obj\Debug\CarInsuranceMVC.csproj.CopyComplete
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\obj\Debug\CarInsuranceMVC.dll
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\obj\Debug\CarInsuranceMVC.pdb
-D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\obj\Debug\CarInsuranceMVC.csprojAssemblyReference.cache
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\bin\EntityFramework.dll
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\bin\EntityFramework.SqlServer.dll
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\bin\EntityFramework.xml
 D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\bin\EntityFramework.SqlServer.xml
+D:\Tech Academy\TA-C-Sharp-Coding\MVC Practical\CarInsuranceMVC\CarInsuranceMVC\obj\Debug\CarInsuranceMVC.csprojAssemblyReference.cache

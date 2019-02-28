@@ -138,23 +138,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\UserQuote.cs">
-      <DependentUpon>UserQuotes.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\UserQuotes.Context.cs">
+    <Compile Include="Models\UserData.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UserQuotes.Context.tt</DependentUpon>
+      <DependentUpon>UserData.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\UserQuotes.cs">
+    <Compile Include="Models\UserData.cs">
+      <DependentUpon>UserData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserData.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UserQuotes.tt</DependentUpon>
+      <DependentUpon>UserData.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\UserQuote.Designer.cs">
+    <Compile Include="Models\UserData1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UserQuote.edmx</DependentUpon>
+      <DependentUpon>UserData.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -167,24 +167,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\UserQuotes.Context.tt">
+    <Content Include="Models\UserData.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>UserQuotes.Context.cs</LastGenOutput>
-      <DependentUpon>UserQuote.edmx</DependentUpon>
+      <DependentUpon>UserData.edmx</DependentUpon>
+      <LastGenOutput>UserData.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\UserQuotes.tt">
+    <Content Include="Models\UserData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UserQuote.edmx</DependentUpon>
-      <LastGenOutput>UserQuotes.cs</LastGenOutput>
+      <DependentUpon>UserData.edmx</DependentUpon>
+      <LastGenOutput>UserData1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\UserQuote.edmx">
+    <EntityDeploy Include="Models\UserData.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>UserQuote.Designer.cs</LastGenOutput>
+      <LastGenOutput>UserData.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\UserQuote.edmx.diagram">
-      <DependentUpon>UserQuote.edmx</DependentUpon>
+    <Content Include="Models\UserData.edmx.diagram">
+      <DependentUpon>UserData.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -209,7 +209,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Quote.cshtml" />
+    <Content Include="Views\Home\UserForm.cshtml" />
+    <Content Include="Views\Home\InputError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
