@@ -211,6 +211,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\UserForm.cshtml" />
     <Content Include="Views\Home\InputError.cshtml" />
+    <Content Include="Views\Home\Quote.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

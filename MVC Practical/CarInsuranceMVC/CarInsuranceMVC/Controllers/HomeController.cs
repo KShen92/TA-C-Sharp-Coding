@@ -22,7 +22,8 @@ namespace CarInsuranceMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult UserInput(string firstName, string lastName, string emailAddress)
+        public ActionResult UserInput(string firstName, string lastName, string emailAddress, short carYear, string carMake, 
+            string carModel, bool DUI, short speedingTickets, bool fullCoverage, DateTime dateOfBirth = new DateTime())
         {
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
             {
@@ -36,11 +37,32 @@ namespace CarInsuranceMVC.Controllers
                     userdata.FirstName = firstName;
                     userdata.LastName = lastName;
                     userdata.EmailAddress = emailAddress;
+                    userdata.DateOfBirth = dateOfBirth;
+                    userdata.CarYear = carYear;
+                    userdata.CarMake = carMake;
+                    userdata.CarModel = carModel;
+                    if (DUI)
+                    {
+                        userdata.DUI = true;
+                    }
+                    else
+                    {
+                        userdata.DUI = false;
+                    }
+                    userdata.SpeedingTickets = speedingTickets;
+                    if (fullCoverage)
+                    {
+                        userdata.FullCoverage = true;
+                    }
+                    else
+                    {
+                        userdata.FullCoverage = false;
+                    }
 
                     db.UserDatas.Add(userdata);
                     db.SaveChanges();
                 }
-                return View("Success");
+                return View("Quote");
             }
         }
 
