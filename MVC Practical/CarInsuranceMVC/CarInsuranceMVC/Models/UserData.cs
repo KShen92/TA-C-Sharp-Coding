@@ -25,6 +25,6 @@ namespace CarInsuranceMVC.Models
         public Nullable<bool> DUI { get; set; }
         public Nullable<short> SpeedingTickets { get; set; }
         public Nullable<bool> FullCoverage { get; set; }
-        public Nullable<int> Quote { get; set; }
+        public Nullable<double> Quote { get; set; }
     }
 }

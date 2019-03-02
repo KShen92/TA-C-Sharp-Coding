@@ -15,7 +15,7 @@
     <Property Name="DUI" Type="Boolean" />
     <Property Name="SpeedingTickets" Type="Int16" />
     <Property Name="FullCoverage" Type="Boolean" />
-    <Property Name="Quote" Type="Int32" />
+    <Property Name="Quote" Type="Double" />
   </EntityType>
   <EntityContainer Name="CarInsuranceMVCEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="UserDatas" EntityType="Self.UserData" />
