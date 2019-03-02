@@ -1,0 +1,18 @@
+﻿@using CarInsuranceMVC.ViewModels
+@model List<AdminVm>
+
+<div class="jumbotron jumbotron-fluid text-center" style="padding:0px;padding-bottom: 50px;background-color:rgba(255,255,255,0.6);">
+    <h3>Admin View</h3>
+    @foreach (var userdata in Model)
+    {
+        <div row>
+            @userdata.FirstName
+            @userdata.LastName
+            @userdata.EmailAddress
+            @userdata.Quote
+            <br />
+        </div>
+    }
+</div>
+
+
