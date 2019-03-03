@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "ReadSuccess";
+}
+
+<div class="jumbotron jumbotron-fluid text-center" style="padding:0px;padding-bottom: 50px;background-color:rgba(255,255,255,0.6);">
+    <h1>Read Successful!</h1>
+    <p class="lead">Click button below to display database.</p>
+    <button type="button" class="btn btn-primary btn-lg" onclick=" window.location.href= '@Url.Action("DisplayData", "Home")'">Display</button>
+</div>

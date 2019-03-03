@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ExcelSourceProject.ViewModels
+namespace ExcelSourceProject.View_Models
 {
-    public class UserDataVm
+    public class DataVm
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

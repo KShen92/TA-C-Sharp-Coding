@@ -1,4 +1,5 @@
 ﻿using ExcelSourceProject.Models;
+using ExcelSourceProject.View_Models;
 using LinqToExcel;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,14 @@ namespace ExcelSourceProject.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()        
+        public ActionResult Index()
         {
-            string filePath = "ExcelSource.xlsx";
+            return View();
+        }
+
+        public ActionResult ReadData()        
+        {
+            string filePath = @"D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSource.xlsx";
             var excelSource = new ExcelQueryFactory(filePath);
             var readSource = from x in excelSource.Worksheet() select x;
 
@@ -33,7 +39,25 @@ namespace ExcelSourceProject.Controllers
                     db.SaveChanges();
                 }
             }
-            return View();
+            return View("ReadSuccess");
+        }
+
+        public ActionResult DisplayData()
+        {
+            using (ExcelSourceEntities db = new ExcelSourceEntities())
+            {
+                var userdata = db.ExcelSources.ToList();
+                var dataVms = new List<DataVm>();
+                foreach (var user in userdata)
+                {
+                    var dataVm = new DataVm();
+                    dataVm.FirstName = user.FirstName;
+                    dataVm.LastName = user.LastName;
+                    dataVm.EmailAddress = user.EmailAddress;
+                    dataVms.Add(dataVm);
+                }
+                return View(dataVms);
+            }
         }
     }
 }

@@ -86,3 +86,4 @@ D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSourceProject
 D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSourceProject\obj\Debug\ExcelSourceProject.csproj.CopyComplete
 D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSourceProject\obj\Debug\ExcelSourceProject.dll
 D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSourceProject\obj\Debug\ExcelSourceProject.pdb
+D:\Tech Academy\TA-C-Sharp-Coding\C# Final\ExcelSourceProject\ExcelSourceProject\obj\Debug\ExcelSourceProject.csprojAssemblyReference.cache
